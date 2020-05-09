@@ -1,130 +1,185 @@
-   html,
-   body {
-       background-color: rgb(247, 198, 43);
-       font-family: Yanone Kaffeesatz;
-       margin: 0;
-   }
-   
-   .menu {
-       display: flex;
-       height: 10vh;
-       background-color: black;
-       align-items: center;
-       overflow: hidden;
-       position: fixed;
-       width: 100%;
-   }
-   
-   .menu-list {
-       display: flex;
-       justify-content: space-evenly;
-       list-style: none;
-       width: 100%;
-   }
-   
-   .menu-element {
-       text-decoration: none;
-       font-size: 30px;
-       color: rgb(247, 198, 43);
-   }
-   
-   .menu-element:hover {
-       color: white;
-   }
-   
-   .welcome {
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
-       height: 100vh;
-   }
-   
-   .nestor {
-       font-size: 65px;
-   }
-   
-   .drums {
-       font-size: 35px;
-   }
-   
-   .bio {
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
-       height: 100vh;
-   }
-   
-   .bio-tittle {
-       font-size: 45px;
-       padding-top: 100px;
-       margin-bottom: 0;
-   }
-   
-   .date {
-       font-size: 22px;
-       margin: 20px 30px 0 0;
-       line-height: 35px;
-   }
-   
-   .photos-tittle {
-       font-size: 45px;
-       text-align: center;
-       padding-top: 130px;
-   }
-   
-   .photos-grid {
-       display: grid;
-       grid-template-columns: 85vw;
-       grid-gap: 20px;
-       justify-content: center;
-   }
-   
-   .photo-box img {
-       object-fit: cover;
-       height: 100%;
-       width: 100%
-   }
-   
-   .contact {
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
-       text-align: center;
-       height: 80vh;
-   }
-   
-   .contact-text {
-       margin-bottom: 10vh;
-   }
-   
-   .contenedor-redes {
-       display: flex;
-       justify-content: space-evenly;
-       width: 100%;
-   }
-   
-   .media-links img {
-       width: 60px;
-       height: 60px;
-   }
-   
-   .footer {
-       background-color: black;
-       color: rgb(247, 198, 43);
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       height: 10vh;
-   }
-   
-   @media (min-width: 1280px) {
-       .menu-list {
-           justify-content: flex-end;
-       }
-       .menu-element {
-           margin-right: 40px;
-       }
-   }
+  html,
+  body {
+      background-color: rgb(247, 198, 43);
+      font-family: Yanone Kaffeesatz;
+      margin: 0;
+  }
+  
+  .menu {
+      display: flex;
+      height: 10vh;
+      background-color: black;
+      align-items: center;
+      overflow: hidden;
+      position: fixed;
+      width: 100%;
+  }
+  
+  .menu-list {
+      display: flex;
+      justify-content: space-evenly;
+      list-style: none;
+      width: 100%;
+  }
+  
+  .menu-element {
+      text-decoration: none;
+      font-size: 30px;
+      color: rgb(247, 198, 43);
+  }
+  
+  .menu-element:hover {
+      color: white;
+  }
+  
+  .welcome {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+  }
+  
+  .nestor {
+      font-size: 65px;
+  }
+  
+  .drums {
+      font-size: 35px;
+  }
+  
+  .bio {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+  }
+  
+  .bio-tittle {
+      font-size: 45px;
+      padding-top: 100px;
+      margin-bottom: 0;
+  }
+  
+  .date {
+      font-size: 22px;
+      margin: 20px 30px 0 0;
+      line-height: 35px;
+  }
+  
+  .photos-tittle {
+      font-size: 45px;
+      text-align: center;
+      padding-top: 130px;
+  }
+  
+  .photos-grid {
+      display: grid;
+      grid-template-columns: 85vw;
+      grid-gap: 20px;
+      justify-content: center;
+  }
+  
+  .photo-box img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%
+  }
+  
+  .contact {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 80vh;
+  }
+  
+  .contact-text {
+      margin-bottom: 10vh;
+  }
+  
+  .contenedor-redes {
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+  }
+  
+  .media-links img {
+      width: 60px;
+      height: 60px;
+  }
+  
+  .footer {
+      background-color: black;
+      color: rgb(247, 198, 43);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 10vh;
+  }
+  
+  @media (min-width: 612px) {
+      .nestor {
+          font-size: 115px;
+      }
+      .drums {
+          font-size: 75px;
+      }
+      .bio-tittle {
+          font-size: 85px;
+          padding-top: 0;
+      }
+      .date {
+          font-size: 35px;
+          margin: 20px 60px 0 60px;
+          line-height: 55px;
+      }
+      .photos-tittle {
+          font-size: 85px;
+          margin-bottom: 35px;
+      }
+      .photos-grid {
+          grid-template-columns: 40vw 40vw;
+          grid-gap: 30px;
+      }
+      .play {
+          font-size: 60px;
+      }
+      .contact-me {
+          font-size: 90px;
+          margin: 0;
+      }
+  }
+  
+  @media (min-width: 1280px) {
+      .menu-list {
+          justify-content: flex-end;
+      }
+      .menu-element {
+          margin-right: 40px;
+      }
+      .nestor {
+          font-size: 255px;
+          margin-bottom: 0;
+      }
+      .drums {
+          font-size: 115px;
+      }
+      .bio-tittle {
+          font-size: 125px;
+      }
+      .photos-grid {
+          grid-template-columns: 22vw 22vw 22vw;
+          grid-column-gap: 130px;
+          grid-row-gap: 30px;
+      }
+      .play {
+          font-size: 80px;
+      }
+      .contact-me {
+          font-size: 120px;
+          margin: 0;
+      }
+  }
