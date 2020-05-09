@@ -10,6 +10,9 @@
        height: 10vh;
        background-color: black;
        align-items: center;
+       overflow: hidden;
+       position: fixed;
+       width: 100%;
    }
    
    .menu-list {
@@ -34,7 +37,7 @@
        flex-direction: column;
        justify-content: center;
        align-items: center;
-       height: 90vh;
+       height: 100vh;
    }
    
    .nestor {
@@ -55,21 +58,33 @@
    
    .bio-tittle {
        font-size: 45px;
+       padding-top: 100px;
+       margin-bottom: 0;
    }
    
    .date {
-       font-size: 25px;
-       margin: 30px 30px 0 0;
+       font-size: 22px;
+       margin: 20px 30px 0 0;
        line-height: 35px;
    }
    
    .photos-tittle {
        font-size: 45px;
+       text-align: center;
+       padding-top: 130px;
    }
    
-   .photos {
-       text-align: center;
-       height: 100vh;
+   .photos-grid {
+       display: grid;
+       grid-template-columns: 85vw;
+       grid-gap: 20px;
+       justify-content: center;
+   }
+   
+   .photo-box img {
+       object-fit: cover;
+       height: 100%;
+       width: 100%
    }
    
    .contact {
@@ -78,7 +93,22 @@
        justify-content: center;
        align-items: center;
        text-align: center;
-       height: 85vh;
+       height: 80vh;
+   }
+   
+   .contact-text {
+       margin-bottom: 10vh;
+   }
+   
+   .contenedor-redes {
+       display: flex;
+       justify-content: space-evenly;
+       width: 100%;
+   }
+   
+   .media-links img {
+       width: 60px;
+       height: 60px;
    }
    
    .footer {
@@ -87,7 +117,7 @@
        display: flex;
        justify-content: center;
        align-items: center;
-       height: 15vh;
+       height: 10vh;
    }
    
    @media (min-width: 1280px) {
@@ -96,6 +126,5 @@
        }
        .menu-element {
            margin-right: 40px;
-           ;
        }
    }
